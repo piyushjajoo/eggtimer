@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pjajoo.eggtimer.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/myRelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SeekBar
+            android:id="@+id/timerSeekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="17dp" />
+
+        <ImageView
+            android:id="@+id/eddImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/egg" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/eddImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="270dp"
+            android:hint="0:30"
+            android:textSize="70sp" />
+
+        <Button
+            android:id="@+id/controllerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="153dp"
+            android:onClick="controlTimer"
+            android:text="Go" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
